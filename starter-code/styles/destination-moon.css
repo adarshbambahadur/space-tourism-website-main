@@ -26,6 +26,7 @@ main {
 
 .destination {
   position: relative;
+  cursor: pointer;
 }
 
 .destination.active::after {
@@ -59,6 +60,23 @@ main {
   padding-bottom: 50px;
   margin-inline: auto;
   border-bottom: 1px solid #383B4B;
+}
+
+.hero-content {
+  position: relative;
+  height: 150vh;
+  overflow-x: hidden;
+}
+
+.destination-container {
+  position: absolute;
+  width: 100%;
+}
+
+.destination-container>div {
+  position: absolute;
+  width: 100%;
+  left: calc(var(--left) * 100%);
 }
 
 
@@ -117,12 +135,12 @@ main {
 }
 
 
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1280px) {
   main {
     padding: 76px 164px;
   }
 
-  .hero-content {
+  .destination-container>div {
     display: flex;
     justify-content: space-between;
     align-items: center;
