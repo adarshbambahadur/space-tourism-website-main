@@ -1,0 +1,177 @@
+body {
+  background-image: url('../assets/crew/background-crew-mobile.jpg');
+}
+
+main {
+  padding-top: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero-heading {
+  margin-bottom: 32px;
+}
+
+.crew-image img {
+  margin-left: 40px;
+}
+
+.crew-selector {
+  margin: 32px auto;
+  height: 10px;
+}
+
+.crew-selector span {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.crew-selector span+span {
+  margin-left: 16px;
+}
+
+.crew-selector span.active {
+  opacity: 1;
+}
+
+.crew-member-role {
+  opacity: 0.5;
+  font-size: 16px;
+}
+
+.crew-member-name {
+  font-size: 24px;
+}
+
+.crew-member-role,
+.crew-member-name {
+  font-weight: 400;
+}
+
+.crew-member-about {
+  font-size: 15px;
+  line-height: 25px;
+  color: #D0D6F9;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 481px) {
+  body {
+    background-image: url('../assets/crew/background-crew-tablet.jpg');
+  }
+
+  main {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+
+  .hero {
+    padding: 0 30px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .crew-details {
+    order: -1;
+  }
+
+  .crew-information {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .crew-image {
+    width: 420px;
+    height: 572px;
+    order: 2;
+  }
+
+  .crew-selector {
+    margin-block: 40px;
+  }
+
+  .crew-member-about {
+    max-width: 444px;
+    margin-inline: auto;
+  }
+
+  .crew-member-role {
+    font-size: 24px;
+  }
+
+  .crew-member-name {
+    font-size: 40px;
+  }
+
+  .crew-member-about {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  body {
+    background-image: url('../assets/crew/background-crew-desktop.jpg');
+  }
+
+  main {
+    padding: 76px 0 0 24px;
+  }
+
+  .hero {
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  .hero .hero-heading {
+    margin-bottom: 154px;
+  }
+
+  .hero-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .crew-member-about,
+  .crew-selector {
+    margin-inline: 0;
+  }
+
+  .crew-member-role {
+    font-size: 32px;
+  }
+
+  .crew-member-name {
+    font-size: 56px;
+  }
+
+  .crew-member-about {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .crew-selector {
+    margin-block: 120px 94px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  main {
+    padding: 76px 136px 0 166px;
+  }
+}

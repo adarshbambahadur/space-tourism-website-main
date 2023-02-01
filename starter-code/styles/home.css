@@ -1,0 +1,113 @@
+body {
+  background-image: url('../assets/home/background-home-mobile.jpg');
+}
+
+.travel-where {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+
+.to-space {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.hero-para {
+  color: #D0D6F9;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  max-width: 444px;
+  margin-inline: auto;
+}
+
+.explore {
+  border: 0;
+  outline: none;
+  font-family: 'Bellefair', sans-serif;
+  text-transform: uppercase;
+  color: #0B0D17;
+  width: 150px;
+  height: 150px;
+  font-size: 20px;
+  letter-spacing: 1.25px;
+
+  margin-top: 30px;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    background-image: url('../assets/home/background-home-tablet.jpg');
+  }
+
+  .hero {
+    margin-top: 36px;
+  }
+}
+
+/* Tablet Screen */
+@media screen and (min-width: 600px) {
+  .travel-where {
+    margin-top: 106px;
+    font-size: 20px;
+    letter-spacing: 3.375px;
+  }
+
+  .to-space {
+    font-size: 150px;
+  }
+
+  .hero-para {
+    font-size: 16px;
+  }
+}
+
+/* Desktop Screen */
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url('../assets/home/background-home-desktop.jpg');
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  main {
+    padding: 76px 164px;
+  }
+
+  .hero {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .travel-where {
+    margin-top: 0;
+    font-size: 28px;
+    letter-spacing: 4.725px;
+  }
+
+  .to-space {
+    font-size: 150px;
+  }
+
+  .hero-para {
+    font-size: 18px;
+  }
+
+  .explore {
+    width: 274px;
+    height: 274px;
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
+}

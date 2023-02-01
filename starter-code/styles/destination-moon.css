@@ -1,0 +1,158 @@
+body {
+  background-image: url('../assets/destination/background-destination-mobile.jpg');
+}
+
+main {
+  padding-top: 0;
+}
+
+.destination-img img {
+  width: 170px;
+  height: 170px;
+  margin-inline: auto;
+  margin-block: 20px;
+}
+
+.destinations {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  margin-inline: auto;
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed';
+  font-size: 14px;
+  letter-spacing: 2.36px;
+}
+
+.destination {
+  position: relative;
+}
+
+.destination.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 30px;
+  height: 3px;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.destination+.destination {
+  margin-left: 26px;
+}
+
+.hero-title {
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 0;
+  text-transform: uppercase;
+}
+
+.hero-para {
+  font-size: 15px;
+  line-height: 25px;
+  color: #D0D6F9;
+  max-width: 570px;
+  padding-bottom: 50px;
+  margin-inline: auto;
+  border-bottom: 1px solid #383B4B;
+}
+
+
+@media screen and (min-width: 375px) {
+  body {
+    background-image: url('../assets/destination/background-destination-tablet.jpg');
+  }
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    padding: 40px 55px 0;
+  }
+
+  .destination-img img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .destinations {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    margin-block: 32px 75px;
+  }
+
+  .hero-title {
+    font-size: 80px;
+  }
+
+  .avg-distance-container {
+    margin-right: 55px;
+  }
+
+  .hero-details {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+
+  .hero-details h2 {
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 2.3625px;
+  }
+
+  .hero-details p {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url('../assets/destination/background-destination-desktop.jpg');
+  }
+}
+
+
+@media screen and (min-width: 1120px) {
+  main {
+    padding: 76px 164px;
+  }
+
+  .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .destination-img img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .destination-details {
+    margin-left: 156px;
+  }
+
+  .destinations {
+    margin-inline: 0;
+  }
+
+
+  .hero-title {
+    font-size: 100px;
+  }
+
+  .hero-para {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .hero-details {
+    justify-content: flex-start;
+  }
+}

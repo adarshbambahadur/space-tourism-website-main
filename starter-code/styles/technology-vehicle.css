@@ -1,0 +1,193 @@
+body {
+  background-image: url('../assets/technology/background-technology-mobile.jpg');
+}
+
+main {
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.technology-details {
+  padding: 24px;
+}
+
+.space-vehicle-img {
+  width: 100%;
+  margin: 34px 0;
+}
+
+.switch-vehicle-details,
+.switch-vehicle-details span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.switch-vehicle-details span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-weight: 600;
+  border: 1px solid white;
+}
+
+.switch-vehicle-details span.active {
+  background-color: #fff;
+  color: #000;
+}
+
+.switch-vehicle-details span+span {
+  margin-left: 16px;
+}
+
+.technology-terminology {
+  color: #D0D6F9;
+  margin-top: 26px;
+  font-size: 14px;
+  line-height: 0;
+  letter-spacing: 2.3625px;
+}
+
+.technology-name {
+  font-size: 24px;
+}
+
+.technology-about {
+  max-width: 444px;
+  margin-inline: auto;
+  font-size: 15px;
+  line-height: 25px;
+  color: #D0D6F9;
+}
+
+@media screen and (min-width: 481px) {
+  body {
+    background-image: url('../assets/technology/background-technology-tablet.jpg');
+  }
+
+  main {
+    padding-block: 40px 96px;
+  }
+
+  .hero-heading {
+    margin-left: 24px;
+  }
+
+  .switch-vehicle-details,
+  .technology-details {
+    margin-top: 12px;
+  }
+
+  .switch-vehicle-details span {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  .technology-terminology {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+
+  .technology-name {
+    font-size: 40px;
+  }
+
+  .technology-about {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .hero-heading {
+    margin-left: 55px;
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  body {
+    background-image: url('../assets/technology/background-technology-desktop.jpg');
+  }
+
+  main {
+    padding-left: 55px;
+  }
+
+  .hero-heading {
+    margin-left: 0;
+  }
+
+  .hero-content {
+    height: 515px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .technology-information {
+    display: flex;
+    align-items: center;
+  }
+
+  .space-vehicle-img {
+    order: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .space-vehicle-img img {
+    width: auto;
+  }
+
+  .switch-vehicle-details {
+    flex-direction: column;
+  }
+
+  .switch-vehicle-details span {
+    margin-bottom: 32px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .switch-vehicle-details span+span {
+    margin-left: 0;
+  }
+
+  .technology-details {
+    padding: 0;
+    margin-inline: 24px 130px;
+    text-align: left;
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  main {
+    padding-left: 166px;
+  }
+
+  .switch-vehicle-details span {
+    margin-left: 0;
+    margin-bottom: 32px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .technology-details {
+    margin-inline: 80px 130px;
+  }
+
+  .technology-name {
+    font-size: 56px;
+  }
+
+  .technology-about {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
