@@ -64,13 +64,14 @@ main {
 
 .hero-content {
   position: relative;
-  height: 150vh;
+  min-height: 115vh;
   overflow-x: hidden;
 }
 
 .destination-container {
   position: absolute;
   width: 100%;
+  transition: transform 0.3s ease-in-out;
 }
 
 .destination-container>div {
@@ -83,6 +84,9 @@ main {
 @media screen and (min-width: 375px) {
   body {
     background-image: url('../assets/destination/background-destination-tablet.jpg');
+  }
+  .hero-content {
+    min-height: 105vh;
   }
 }
 
@@ -101,6 +105,10 @@ main {
     line-height: 19px;
     letter-spacing: 2.7px;
     margin-block: 32px 75px;
+  }
+
+  .hero-content {
+    min-height: 85vh;
   }
 
   .hero-title {
@@ -134,10 +142,20 @@ main {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .hero-content {
+    min-height: 135vh;
+  }
+}
+
 
 @media screen and (min-width: 1280px) {
   main {
     padding: 76px 164px;
+  }
+
+  .hero-content {
+    min-height: 80vh;
   }
 
   .destination-container>div {
