@@ -155,7 +155,7 @@ main {
   }
 
   .hero-content {
-    min-height: 80vh;
+    min-height: 100vh;
   }
 
   .destination-container>div {
