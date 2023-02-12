@@ -64,7 +64,7 @@ main {
 
 .hero-content {
   position: relative;
-  min-height: 115vh;
+  /* min-height: 115vh; */
   overflow-x: hidden;
 }
 

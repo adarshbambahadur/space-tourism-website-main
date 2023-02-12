@@ -21,6 +21,8 @@ img {
 
 .crew-image img {
   margin-left: 40px;
+  width: 80%;
+  height: 80%;
 }
 
 .crew-selector {
@@ -35,6 +37,7 @@ img {
   background-color: #fff;
   border-radius: 50%;
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .crew-selector span+span {
@@ -66,6 +69,30 @@ img {
   margin-bottom: 0;
 }
 
+.hero-content {
+  position: relative;
+  min-height: 95vh;
+  overflow-x: hidden;
+}
+
+.destination-container {
+  position: absolute;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.destination-container>div {
+  position: absolute;
+  width: 100%;
+  left: calc(var(--left) * 100%);
+}
+
+@media screen and (min-width: 376px) {
+  .hero-content {
+    min-height: 80vh;
+  }
+}
+
 @media screen and (min-width: 481px) {
   body {
     background-image: url('../assets/crew/background-crew-tablet.jpg');
@@ -81,8 +108,13 @@ img {
   }
 
   .hero-content {
+    min-height: 127vh;
+  }
+
+  .destination-container>div {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -97,8 +129,11 @@ img {
 
   .crew-image {
     width: 420px;
-    height: 572px;
+    margin-inline: auto;
+    display: flex;
     order: 2;
+    align-items: flex-end;
+    justify-content: center;
   }
 
   .crew-selector {
@@ -124,6 +159,18 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .hero-content {
+    min-height: 87vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-content {
+    min-height: 149vh;
+  }
+}
+
 @media screen and (min-width: 1025px) {
   body {
     background-image: url('../assets/crew/background-crew-desktop.jpg');
@@ -142,7 +189,7 @@ img {
     margin-bottom: 154px;
   }
 
-  .hero-content {
+  .destination-container>div {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -173,5 +220,15 @@ img {
 @media screen and (min-width: 1280px) {
   main {
     padding: 76px 136px 0 166px;
+  }
+
+  .hero-content {
+    min-height: 110vh;
+  }
+
+  .crew-image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 }
